@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cType">
+        <item>Button</item>
+        <item>Tuch on sceen</item>
+    </string-array>
+	<string-array name="cTypeval">
+        <item>Button</item>
+        <item>Tap</item>
+    </string-array>
+	<string-array name="fonts">
+        <item>Digital</item>
+        <item>Normal</item>
+    </string-array>
+</resources>

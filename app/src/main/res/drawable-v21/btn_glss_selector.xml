@@ -1,0 +1,82 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#336699">
+	
+	<item android:height="10dp"
+		>
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="6dp" android:topRightRadius="6dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<gradient android:type="linear" android:angle="90" android:startColor="#00FFFFFF" android:endColor="#44FFFFFF" android:useLevel="false"/>
+			
+		</shape>
+	</item>
+	<item android:width="10dp">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<gradient android:type="linear" android:angle="0" android:startColor="#44FFFFFF" android:endColor="#00000000" android:useLevel="false"/>
+
+		</shape>
+	</item>
+	<item android:height="10dp" android:gravity="bottom"
+	>
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<gradient android:type="linear" android:angle="90" android:startColor="#44FFFFFF" android:endColor="#00000000" android:useLevel="false"/>
+
+		</shape>
+	</item>
+	<item android:width="10dp" android:gravity="right">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<gradient android:type="linear" android:angle="0" android:startColor="#00FFFFFF" android:endColor="#44ffffff" android:useLevel="false"/>
+
+		</shape>
+	</item>
+	<!--<item android:gravity="bottom"
+		android:bottom="-50dp"
+		android:width="20dp"
+	>
+		<rotate
+            android:fromDegrees="-45"
+            android:pivotX="0%"
+            android:pivotY="0%"
+            android:toDegrees="0" >
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<gradient android:type="linear" android:angle="90" android:startColor="#44FFFFFF" android:endColor="#00000000" android:useLevel="false"/>
+
+		</shape>
+		</rotate>
+	</item>-->
+	<item>
+		<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+			<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+			<solid android:color="#20ffffff"/>
+			<stroke android:width="0dp" android:color="#88000000"/>
+		</shape>
+		
+	</item>
+	
+	
+	
+<!--<item>
+	<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+		<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+		<gradient android:type="radial" android:centerX="0.500000" android:centerY="0.500000" android:gradientRadius="100dp" android:startColor="#22FFFFFF" android:centerColor="#27FFFFFF" android:endColor="#44FFFFFF" android:useLevel="false"/>
+		<stroke android:width="1dp" android:color="#55FFFFFF"/>
+	</shape>
+</item>-->
+<!--<item android:drawable="@drawable/btn_glss_pressed"/>-->
+    <item android:id="@android:id/mask">
+        <inset android:insetBottom="2dp"
+			android:insetLeft="2dp" 
+			android:insetRight="2dp"
+			android:insetTop="2dp">
+            <shape android:shape="rectangle">
+                <!-- Color doesn't matter -->
+				<corners android:topLeftRadius="4dp" android:topRightRadius="4dp" android:bottomRightRadius="4dp" android:bottomLeftRadius="4dp"/>
+                <solid android:color="@android:color/white"/>
+				
+            </shape>
+        </inset>
+    </item>
+</ripple>

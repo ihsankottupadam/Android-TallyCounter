@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="android:style/Theme.Holo.NoActionBar">
+		<item name="android:colorAccent">#5BF8F9</item>
+		</style>
+	
+	<style name="PrefTheme" parent="android:style/Theme.Holo">
+		<item name="android:windowBackground">@drawable/prefbg</item>
+        <item name="android:background">#00000000</item>
+		<item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+		<item name="android:actionBarStyle">@style/PrefActionBar</item>
+	</style>
+	<style name="PrefActionBar" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">@drawable/action_bg</item>
+		<item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+		<item name="android:displayOptions">homeAsUp|showTitle</item>
+	</style>
+	<style name="menubtn" >
+		<item name="android:layout_width" >fill_parent</item>
+		<item name="android:layout_height" >wrap_content</item>
+		<item name="android:textColor" >#ff01acfc</item>
+		<item name="android:gravity" >center</item>
+		<item name="android:layout_marginLeft" >2dp</item>
+		<item name="android:layout_marginRight" >1dp</item>
+		<item name="android:textSize" >20dp</item>
+		<item name="android:background">@drawable/df_btn_selector</item>
+	</style>
+	<style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+</resources>

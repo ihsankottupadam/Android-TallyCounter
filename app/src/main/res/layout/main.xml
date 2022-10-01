@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:id="@+id/linear_base"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/bg"
+		android:weightSum="10"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="4"
+			android:gravity="center_horizontal|bottom">
+
+			<TextView
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtdisp"
+				android:background="#33000000"
+				android:gravity="center"
+				android:text=""
+				android:singleLine="true"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:textColor="#ff01acfc"
+				android:textSize="50sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linear_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="6"
+			android:gravity="center"
+			android:weightSum="10"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="3.5"
+				android:gravity="center">
+
+				<Button
+					android:id="@+id/minusbtn"
+					android:layout_width="75dp"
+					android:layout_height="75dp"
+					android:gravity="center"
+					android:text="-"
+					android:paddingTop="-8dp"
+					android:padding="0dp"
+					android:textSize="50dp"
+					android:textColor="@drawable/button_text_color_selector"
+					android:background="@drawable/btn_glss_selector"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="6.5"
+				android:gravity="center">
+
+				<Button
+					android:id="@+id/addbtn"
+					android:layout_width="150dp"
+					android:layout_height="150dp"
+					android:gravity="center"
+					android:text="+"
+					android:textSize="50dp"
+					android:textColor="@drawable/button_text_color_selector"
+					android:background="@drawable/btn_glss_selector"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/btn"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="5dp"
+		android:elevation=".5dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/ic_menu"/>
+
+	<Button
+		android:id="@+id/optbtn"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:elevation=".5dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/df_btn_selector"/>
+	
+	<ScrollView
+		android:id="@+id/Scroll"
+		android:layout_width="150dp"
+		android:layout_height="298dp"
+		android:background="@drawable/bg1"
+		android:layout_below="@id/optbtn"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="60dp"
+		android:layout_marginRight="8dp"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="4dp"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/ACTION_RESET"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="Reset"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:src="@drawable/border"/>
+
+			<Button
+				android:id="@+id/ACTION_TARGET"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="Target"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/border"/>
+
+			<Button
+				android:id="@+id/ACTION_SETTINGS"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="Settings"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/border"/>
+
+			<Button
+				android:id="@+id/ACTION_SETVALUE"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="Set value"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/border"/>
+
+			<Button
+				android:id="@+id/ACTION_MINI_COUNTER"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="Mini counter"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:background="@drawable/border"/>
+
+			<Button
+				android:id="@+id/ACTION_ABOUT"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:text="About"
+				style="@style/menubtn"
+				android:onClick="optclick"/>
+		</LinearLayout>
+
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/lineartarget"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:layout_margin="20dp"
+		android:background="@drawable/bg1"
+		android:paddingBottom="34dp"
+		android:visibility="gone"
+		android:elevation="2dp"
+		android:shadowColor="#555a4a"
+		android:shadowDx="10"
+		android:shadowDy="10"
+		android:shadowRadius="10"
+		android:orientation="vertical">
+
+		<ImageButton
+			android:id="@+id/tgtclose"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="4dp"
+			android:layout_gravity="right"
+			android:src="@drawable/ic_close"
+			android:scaleType="centerInside"
+			android:background="@drawable/df_btn_selector"/>
+
+		<TextView
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:text="Target compleated"
+			android:textColor="#ff01acfc"
+			android:gravity="center"
+			android:textSize="20dp"
+			android:textStyle="bold"/>
+
+	</LinearLayout>
+	<ImageButton
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:onClick="showf"
+		android:visibility="gone"
+		android:src="@drawable/ic_open"/>
+
+</RelativeLayout>
+
